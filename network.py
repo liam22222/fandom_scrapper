@@ -101,8 +101,6 @@ def fetch_all_pages():
         _urls = set_urls_to_full(_new_urls)
         next_page = 'https://avatar.fandom.com' + next_page if 'https://avatar.fandom.com'\
                                                                not in next_page else next_page
-        if 'Chaisee' in next_page:
-            pass
         total_urls = total_urls.union(_urls)
         counter += len(_urls)
         if next_page in next_pages_set:
